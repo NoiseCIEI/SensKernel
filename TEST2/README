@@ -1,0 +1,8 @@
+
+
+To get sensetivity kernels execute C-shell script RUN 
+
+...> RUN
+
+Compare results with precomputed results in ../TEST1 directory.
+

@@ -1,0 +1,5 @@
+#!/bin/tcsh
+# 
+../bin/KERNELS.csh eus_model test R 1 10 100 10 2
+../bin/KERNELS.csh eus_model test L 1 10 100 10 2
+exit

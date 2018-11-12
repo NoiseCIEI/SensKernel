@@ -1,0 +1,6 @@
+
+This directory includes precomputed results of seiskernel packages
+for 1D profile stored in eus-model file. The results are done by
+RUN script.
+
+To run your own test go to TEST2 subdirectory.

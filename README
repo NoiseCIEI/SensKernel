@@ -1,0 +1,75 @@
+INTRODUCTION
+============
+
+The package senskernel-1.0 provides the following opportunity for users 
+working at Linux-based computers:
+  - Calculation of multi-modal surface wave dispersion and eigenfunctions 
+    in flat isotropic elastic Earth model consisting of homogeneous layers. 
+    Options for sphericity and attenuation corrections are included.
+  - Calculation of phase velocity sensitivity kernels for the same model.
+  - Calculation of group velocity sensitivity kernels for the same model.
+
+Package includes three programs: SURF_PERTURB, PHV_SENS_KERNEL ,
+GRV_SENS_KERNEL and C-shell script KERNELS.csh .
+
+CONTENTS
+
+1. PACKAGE CONTENTS
+2. INSTALLATION
+3. SYSTEM REQUIREMENTS
+4. TEST ISTALLATION
+
+1. PACKAGE CONTENTS
+   ================
+The contents of the package are as follows:
+README         this file
+bin            contains of three binary 64-bit executable programs (OS RHEL 5.9)
+               GRV_SENS_KERNEL, PHV_SENS_KERNEL, SURF_PERTURB,
+               and script KERNELS.csh.
+src            contains of program source codes
+TEST1          contains of precomputed example test
+TEST2          directory to run your own  installation
+
+2.  INSTALLATION
+   ================
+   Use the gunzip and tar command to extract distribution contents.
+
+     ...> gunzip senskernel-1.0.tgz
+     ...> tar xvf senskernel-1.0.tar
+
+This will yield a top level directory named senskernel-1.0 with an executable,
+along with other miscellaneous files.
+Go to senskernel-1.0/src directory and recompile, if necessary, all programs.
+To do that execute the following coomands
+   ...> make clean
+   ...> make
+   ...> make install
+
+The resulting binary modules GRV_SENS_KERNEL, PHV_SENS_KERNEL and
+SURF_PERTURB will be installed under senskernel-1.0/bin directory. 
+In case of problems update Makefile properly.
+The senskernel-1.0/bin directory originally includes binary modules compiled by 
+gcc/gfortran v4.1.2 compiler under RHEL 5.9 (RedHat Enterprise Linux 5.9)
+Operational System.
+
+See an example of run in the directory TEST1 and try your own run
+in directory TEST2.    
+
+3. SYSTEM REQUIREMENTS
+   ===================
+
+   - 64-bit or 32-bit platforms
+   - Linux Operation System, 
+     currently tested on RHEL 5.x, 32 and 64 bit version under 
+     gcc/gfortran v4.1.2
+   - SUN OS Solaris
+     currently tested on Solaris rel.5.7/5.8/5.10 cc/f77 WorkShop Compilers 4.2
+   - Mac X 
+     currently tested on OS 10.7 (Snow Leopard), gcc/gfortran v4.6.0
+   - have to work under other Linux OS and compilers with minor changes.
+
+4. TEST INSTALLATION
+   =================
+   Go to senskernel-1.0/TEST1 to see test results and after goto
+   senskernel-1.0/TEST2 and follow README files.
+   For more details see Senskernel.pdf in senskernel-1.0/doc directory.
